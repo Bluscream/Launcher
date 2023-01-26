@@ -41,7 +41,7 @@ def main(path):
     print '==================== ============ ============= ============= ============= ============ ========================='
 
 def get_value(value, padwidth=None):
-    if padwidth == None:
+    if padwidth is None:
         padwidth = len(value)
 
     return locale_parser.get('PortableApps.comLocaleDetails', value).ljust(padwidth)
